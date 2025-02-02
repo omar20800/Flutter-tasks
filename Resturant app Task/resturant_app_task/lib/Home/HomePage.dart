@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -103,12 +105,17 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 20,),
-                Container(
-                  height: 2,
-                  width: 700,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFEF9771),
-                  ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 2,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFEF9771),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 SizedBox(height: 20,),
                 Container(
